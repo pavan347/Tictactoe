@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #BCEBCB;
+    --secondary-color: #F7FFF6;
+    --text-color: #87D68D;
+}
+
+body {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 7vmin;
+}
+
+
+.container {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vmin;
+    outline: none;
+    border: none;
+    height: 31%;
+    width: 31%;
+    color: white;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+#reset {
+    padding: 1.5vmin 4vmin;
+    font-size: 1rem;
+    margin: 4vmin 0 0 3vmin;
+    background-color: black;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+#modal,
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal .content {
+    padding: 5vmin 8vmin;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.content span {
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+#turn {
+    font-size: 7vmin;
+}
+
+footer{
+    height: 5vh;
+    text-align: center;
+    background-color: var(--primary-color);
+}
